@@ -35,4 +35,13 @@ CREATE NEW COMPONENTS via Angular CLI
 In terminal we run `ng generate component component-name` or short `ng g c component-name`, then we output them in app.component.html
 
 
+DATA BINDING
+
+String Interpolation ({{ data }})
+Property Binding ([property]="data")
+Event Binding ((event)="expression")
+Two-Way-Binding ([(ngModel)]="data")
+
+For Two-Way-Binding to work we need to enable ngModel directive. This is done by adding the FormsModule to the imports[] array in the AppModule. We then also have to add the import from @angular/forms in the app.module.ts file. import { FormsModule } from "@angular/forms"
+
 */
